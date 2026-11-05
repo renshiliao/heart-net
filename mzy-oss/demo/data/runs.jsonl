@@ -1,0 +1,5 @@
+{"ts": "2026-11-03 11:07 (CST) 周二", "ev": "register", "job": "demo-heartbeat", "trigger": {"type": "interval", "seconds": 1.0}, "max_instances": 1}
+{"ts": "2026-11-03 11:07 (CST) 周二", "ev": "sync_from_db", "replayed": ["demo-heartbeat"], "catchups": []}
+{"ts": "2026-11-03 11:07 (CST) 周二", "ev": "fire", "job": "demo-heartbeat", "kind": "timer", "delay": 0.01}
+{"ts": "2026-11-03 11:07 (CST) 周二", "ev": "fire", "job": "demo-heartbeat", "kind": "timer", "delay": 0.01}
+{"ts": "2026-11-03 11:07 (CST) 周二", "ev": "fire", "job": "demo-heartbeat", "kind": "timer", "delay": 0.01}

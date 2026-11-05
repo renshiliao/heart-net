@@ -1,0 +1,18 @@
+{
+ "jobs": {
+  "demo-heartbeat": {
+   "name": "demo-heartbeat",
+   "trigger_desc": {
+    "type": "interval",
+    "seconds": 1.0
+   },
+   "tz": "Asia/Shanghai",
+   "persistent": true,
+   "misfire_grace_time": 300,
+   "max_instances": 1,
+   "next_run": 1793675250.619677,
+   "run_count": 3,
+   "running": 0
+  }
+ }
+}

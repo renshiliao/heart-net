@@ -1,0 +1,23 @@
+{
+  "id": "card-english-tenses",
+  "title": "英语时态口诀",
+  "trigger": "时态|口诀|一般现在|现在完成|英语",
+  "keywords": [
+    "英语",
+    "时态",
+    "口诀",
+    "现在完成",
+    "过去完成"
+  ],
+  "content": "# 英语时态口诀\n\n- 一般现在：常态真理习惯跑，三单动词加 s。\n- 一般过去：过完收工 did 上，不规则动词背表。\n- 一般将来：will + 原形前面挡，be going to 表打算。\n- 现在进行：be + doing 正在忙，look/listen 是信号。\n- 过去进行：was/were + doing，某时某刻正在干。\n- 现在完成：have/has + 过去分词，过去动作影响现在看。\n- 过去完成：had + 过去分词，『过去的过去』是关键。\n\n考前一招：先找时间状语，再定动作状态，最后锁时态。",
+  "category": "英语",
+  "source": "notes/english-tenses.md",
+  "confidence": 0.9,
+  "created_at": "2026-11-02T19:50:25+0000",
+  "updated_at": "2026-11-02T19:50:25+0000",
+  "revision": 1,
+  "parent_revision": null,
+  "change_type": "created",
+  "version": 1,
+  "content_sha256": "5293e7c6de8f2eb8"
+}

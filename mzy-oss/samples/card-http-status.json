@@ -1,0 +1,23 @@
+{
+  "id": "card-http-status",
+  "title": "计算机网络 HTTP 状态码三连",
+  "trigger": "HTTP|状态码|404|500|计算机网络",
+  "keywords": [
+    "计算机网络",
+    "HTTP",
+    "状态码",
+    "重定向",
+    "404"
+  ],
+  "content": "# HTTP 状态码三连\n\n## 2xx 成功\n- 200 OK：正常返回。\n- 201 Created：资源已创建。\n- 204 No Content：成了但没正文。\n\n## 3xx 重定向\n- 301 Moved Permanently：永久搬家，换新址。\n- 302 Found：临时挪窝，还会回来。\n- 304 Not Modified：没变，用缓存。\n\n## 4xx/5xx 出错\n- 400 Bad Request：请求写错怪客户端。\n- 401 Unauthorized：没带身份凭证。\n- 403 Forbidden：认得你也不让进。\n- 404 Not Found：地址查无此物。\n- 500 Internal Server Error：服务端自己翻车。\n\n记法：2 成 3 转 4 怪你 5 怪我。",
+  "category": "计算机网络",
+  "source": "notes/http-status.md",
+  "confidence": 0.92,
+  "created_at": "2026-11-02T19:50:25+0000",
+  "updated_at": "2026-11-02T19:50:25+0000",
+  "revision": 1,
+  "parent_revision": null,
+  "change_type": "created",
+  "version": 1,
+  "content_sha256": "bea0bb1d4487bfd2"
+}

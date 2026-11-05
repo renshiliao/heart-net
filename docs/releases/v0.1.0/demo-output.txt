@@ -1,0 +1,34 @@
+========== mzy-oss 最小实例演示 ==========
+数据目录: demo/data/（跑完不删）
+
+=== 现象① 心跳启动并跳动 ===
+[心跳] 2026-11-03 03:58 (CST) 周二 第1跳 kind=timer delay=0.01s
+[心跳] 2026-11-03 03:58 (CST) 周二 第2跳 kind=timer delay=0.01s
+[心跳] 2026-11-03 03:58 (CST) 周二 第3跳 kind=timer delay=0.01s
+你在看什么：时钟内核唤醒线程到点合成事件喂给回调，共跳动 3 跳（演示用秒级短间隔；线上默认 60 秒一跳）。
+
+=== 现象② 事件入轴 ===
+xw_event_log → {"ts": "2026-11-03 03:58 (CST) 周二", "time_source": "server", "source": "demo", "status": "已完成", "content": "演示事件：跑通一次三角函数公式速查卡", "sha": "7f44c1cea022"}
+events.jsonl: 0 行 → 1 行（长了 1 行）
+负例（调用方自带时间字段）→ {"error": "time_field_rejected", "field": "ts"}
+xw_time → {"now_iso": "2026-11-03 03:58 (CST) 周二", "now_human": "2026-11-03 03:58 (CST) 周二", "time_source": "server"}
+你在看什么：事件卡的 ts 由服务端原子注入且带星期几；调用方伪造时间字段一律拒收（time_field_rejected），xw_time 是唯一取时口。
+
+=== 现象③ xw_search 检索命中样卡 ===
+xw_search('三角函数 公式') → [{"id": "card-math-trig", "title": "高等数学三角函数公式速查", "trigger": "三角函数|公式|sin|cos|二倍角", "snippet": "# 三角函数公式速查"}]
+xw_card_get('card-math-trig') 命中整卡：title=高等数学三角函数公式速查 sha16=2ad1c2e331ae4797 字段数=15
+xw_search('不存在的关键词_zzz') → []（无卡，零空手）
+你在看什么：关键词命中合成样卡返回摘要，取整卡给全 15 字段；无命中显式空列表，不藏不装。
+
+=== 现象④ 完整性校验通过 ===
+xw_status → {"events": 1, "cards": 3, "integrity_ok": true, "runtime_sec": 3.4}
+verify_integrity → True
+你在看什么：HMAC 封条校验通过——轴文件若被绕程序直改，这里当场露馅。
+
+=== 现象⑤ external_pipe 过一条消息 ===
+pass_through → [已转发]hello-mzy-oss；transited_count=1
+数据目录新增文件数: 0
+你在看什么：对外管道进→过→出，不落盘不留痕——数据目录零新增就是活证。
+
+========== 演示完毕 ==========
+数据目录 demo/data/ 已保留（跑完不删），欢迎亲自开箱验货。

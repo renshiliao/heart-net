@@ -1,0 +1,23 @@
+{
+  "id": "card-math-trig",
+  "title": "高等数学三角函数公式速查",
+  "trigger": "三角函数|公式|sin|cos|二倍角",
+  "keywords": [
+    "三角函数",
+    "和差公式",
+    "二倍角",
+    "恒等式",
+    "高数"
+  ],
+  "content": "# 三角函数公式速查\n\n## 基本关系\n- sin^2θ + cos^2θ = 1\n- tanθ = sinθ / cosθ\n- 1 + tan^2θ = sec^2θ\n\n## 和差公式\n- sin(α±β) = sinα·cosβ ± cosα·sinβ\n- cos(α±β) = cosα·cosβ ∓ sinα·sinβ\n\n## 二倍角\n- sin2θ = 2·sinθ·cosθ\n- cos2θ = cos^2θ − sin^2θ = 2cos^2θ − 1 = 1 − 2sin^2θ\n\n## 积化和差（考前重点）\n- sinα·cosβ = ½[sin(α+β) + sin(α−β)]\n- cosα·cosβ = ½[cos(α−β) + cos(α+β)]\n\n考前一招：先认结构再套公式，比死背快。",
+  "category": "数学",
+  "source": "notes/math-trig.md",
+  "confidence": 0.95,
+  "created_at": "2026-11-02T19:50:25+0000",
+  "updated_at": "2026-11-02T19:50:25+0000",
+  "revision": 1,
+  "parent_revision": null,
+  "change_type": "created",
+  "version": 1,
+  "content_sha256": "2ad1c2e331ae4797"
+}
