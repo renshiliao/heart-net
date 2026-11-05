@@ -1,0 +1,10 @@
+Heart-Net (心网) / mzy-oss
+Copyright 2026 renshiliao
+
+本产品调度内核中的 CronJobManager 方法，重实现自开源项目 AstrBot
+（https://github.com/AstrBotDevs/AstrBot），特此致敬并注明出处。
+
+This product includes a method re-implementation of the CronJobManager
+from the open-source AstrBot project (https://github.com/AstrBotDevs/AstrBot).
+
+Licensed under the Apache License, Version 2.0 (see LICENSE).
